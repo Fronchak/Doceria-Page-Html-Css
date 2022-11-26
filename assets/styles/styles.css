@@ -52,3 +52,105 @@ a {
     display: block;
     margin: 0 auto;
 }
+
+/* Content */
+
+#content {
+    position: absolute;
+    left: 300px;
+    width: calc(100% - 300px);
+}
+
+#content h1,
+#content h2 {
+    color: #006599;
+    margin-bottom: 30px;
+}
+
+#content h1 {
+    font-size: 48px;
+}
+
+#content h2 {
+    font-size: 35px;
+}
+
+#content section {
+    padding-left: 50px;
+}
+
+/* Sessão Bem Vind */
+
+#content #sessao-bem-vindo {
+    padding-left: 0px;
+}
+
+.sessao-bem-vindo-content {
+    padding-left: 50px;
+}
+
+#sessao-bem-vindo .banner {
+    background-image: url(../img/banner2.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+#sessao-bem-vindo h1 {
+    margin-top: 70px;
+}
+
+#sessao-bem-vindo::after,
+#sessao-sobre::after {
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 100px;
+}
+
+.sessao-minibanner {
+    width: 300px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+#sessao-bem-vindo .sessao-minibanner {
+    background-image: url(../img/banner3.jpg);
+    float: left;
+}
+
+#sessao-sobre .sessao-minibanner {
+    background-image: url(../img/banner4.jpg);
+    float: right;
+}
+
+#sessao-bem-vindo .sessao-descricao {
+    margin-left: 330px;
+    padding-right: 30px;
+}
+
+.sessao-descricao p {
+    line-height: 2;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.sessao-bem-vindo-btn,
+form input[type="submit"] {
+    background-color: #006599;
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 40px;
+    transition: 0.5s;
+    display: block;
+    width: 100px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.sessao-bem-vindo-btn:hover,
+form input[type="submit"]:hover {
+    background-color: #2790C6;
+}
